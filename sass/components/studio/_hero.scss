@@ -1,0 +1,61 @@
+.hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/background_hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    // padding: 200px 0;
+    text-align: center;
+    @media screen and (min-width:$mobile){
+        padding: 118px 0;
+        height: 400px;
+    }
+    &__title {
+            justify-content: center;
+            color: #fff;
+            // font-size: 44px;
+            font-weight: 900;
+            letter-spacing: $letter-spacing;
+            // line-height: 1.36;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            // width: 696px;
+            @media screen and (min-width:$mobile){
+                font-size:26px;
+                line-height: 1.6;
+                width: 360px;
+            }
+
+        }
+}
+
+.order {
+    display: inline-block;
+    background-color: $accent-color;
+    font-family: inherit;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    line-height: 1.87;
+    letter-spacing: $letter-spacing;
+    // padding: 10px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @media screen and (min-width:$mobile){
+        padding: 10px 24px;
+    }
+}
+
+.order:focus,
+.order:hover {
+    background-color: #188CE8;
+}
+
+
+

@@ -1,0 +1,26 @@
+.logo {
+    font-family: $font-style;
+    font-weight: 700;
+    font-size: 26px;
+    color: $text-color;
+    line-height: 1.19;
+}
+
+.logo__adress {
+    font-family: $font-style;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    color: $text-color;
+}
+
+.logo__style {
+    color: $accent-color;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+}
+
+.logo__studio {
+    color: #fff;
+    letter-spacing: 0.03em;
+}
