@@ -1,7 +1,10 @@
 .section {
-    padding-top: 94px;
+    
 
     @media screen and (min-width:$mobile){
         padding-top: 60px;
+    }
+    @media screen and (min-width:$laptop){
+        padding-top: 94px;
     }
 }

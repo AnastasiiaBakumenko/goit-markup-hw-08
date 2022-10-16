@@ -4,14 +4,21 @@
 }
 
 .team {
-    // display: flex;
-    // align-items: center;
-    // flex-basis: calc((100% - 90px)/4);
-    // padding-bottom: 94px;
+   
     @media screen and(min-width:$mobile){
         padding-bottom: 60px;
     }
-
+    @media screen and (min-width:$tablet){
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px)/2);
+    }
+    @media screen and (min-width:$laptop){
+        flex-basis: calc((100% - 90px)/4);
+        padding-bottom: 94px;
+        margin: 0;
+    }
 
 
     &__title {
@@ -28,18 +35,39 @@
         }
         }
  &__list:not(:first-child) {
-    //  margin-left: 30px;
+    
      @media screen and (min-width:$mobile){
             margin-top: 30px;
     }
+    @media screen and(min-width:$laptop){
+        margin-top: 0px;
+        margin-left: 30px;
+    }
  }
+
 
 &__list {
 
     background-color: $bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
+    @media screen and(min-width:$tablet){
+        &:nth-child(odd){
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width:$tablet){
+        &:nth-child(-n + 2){
+            margin-top: 0;
+            
+        }
+      }
+    @media screen and(min-width:$laptop){
+        margin: 0;
+        &:nth-child(odd){
+            margin-right: 0;
+        }
+    }
    
 }
 
@@ -50,6 +78,14 @@
     @media screen and (min-width:$mobile){
     width:450px;
     height: 460px;
+    }
+    @media screen and (min-width:$tablet){
+        width: 354px;
+        height: 374px;
+    }
+    @media screen and(min-width:$laptop){
+        width: 270px;
+        height: 260px;
     }
 }
 

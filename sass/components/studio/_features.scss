@@ -1,10 +1,13 @@
 .features {
-    padding-bottom: 0px;
     @media screen and(min-width:$tablet){
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 60px;
+        padding-bottom: 60px;
     }
+    @media screen and(min-width:$laptop){
+        padding-bottom: 94px;
+    }
+   
 
     &__title {
             text-transform: uppercase;
