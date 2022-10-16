@@ -21,8 +21,8 @@
 
 .modal {
     position: absolute;
-    min-width: 530px;
-    min-height: 580px;
+    // min-width: 530px;
+    // min-height: 580px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -56,6 +56,11 @@
     &__form {
         margin: 40px 40px;
     }
+}
+@media screen and(min-width:$mobile){
+    .modal{
+    width: 450px;
+    height: 609px;}
 }
 .form__title {
     font-weight: 700;
@@ -180,7 +185,11 @@
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         }
 }
-
+@media screen and (min-width:$mobile){
+    .checkbox__agree{
+        font-size: 12px;
+    }
+}
 
 .form__checkbox a {
     text-decoration: underline;
