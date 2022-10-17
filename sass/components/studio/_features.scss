@@ -1,21 +1,31 @@
 .features {
+    @media screen and(max-width:479px){
+        padding-top: 20px ;
+        padding-bottom: 20px;
+    }
     @media screen and(min-width:$tablet){
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 60px;
     }
     @media screen and(min-width:$laptop){
-        padding-bottom: 94px;
+        padding-bottom: 0px;
     }
    
-
+    &__list:not(:first-child){
+        @media screen and(max-width:479px){
+        margin-top: 10px;
+    }}
     &__title {
             text-transform: uppercase;
             font-weight: 700;
             line-height: 1.14;
             letter-spacing: 0.03em;
             padding-bottom: 10px;
-
+            @media screen and(max-width:479px){
+                display: flex;
+                justify-content: center;
+            }
             @media screen and (min-width:$mobile){
                 display: flex;
                 justify-content: center;}
@@ -70,7 +80,7 @@
             background-position: center;
             background-size: auto;
             margin-bottom: 30px;
-
+           
             @media screen and (min-width:$mobile){
                 width: 450px;
             }

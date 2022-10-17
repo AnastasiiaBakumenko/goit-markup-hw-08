@@ -1,9 +1,16 @@
+.works{
+    @media screen and(max-width:1199px){
+        display: none;
+    }
+}
 .examples {
     display: flex;
     flex-basis: calc((100% - 60px)/3);
     padding-bottom: 94px;
     line-height: 0;
-
+    @media screen and(min-width:$laptop){
+        padding-left: 0;
+    }
     &__work {
         display: block;
         position: relative;
