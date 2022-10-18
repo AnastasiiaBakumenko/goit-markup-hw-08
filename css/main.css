@@ -583,7 +583,7 @@ a,
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  max-width: 100vh;
+  max-height: 100%;
 }
 
 @media screen and (min-width: 480px) {

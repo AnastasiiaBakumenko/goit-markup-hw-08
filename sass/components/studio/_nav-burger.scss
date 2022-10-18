@@ -146,5 +146,5 @@ cursor: pointer;
 }}
 .menu-container.is-open{
     transform: translateX(0);
-    max-width: 100vh;
+    max-height: 100%;
 }
