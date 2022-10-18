@@ -7,10 +7,10 @@ address {
     font-style: normal
 }
 .footer__contact {
-    padding: 60px 0;
+    padding-top: 60px;
 
     @media screen and(min-width:$laptop){
-    height: 252px;
+    // height: 252px;
     flex-wrap: wrap;}
 }
 .footer__position {
