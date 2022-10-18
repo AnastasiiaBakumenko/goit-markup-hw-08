@@ -8,7 +8,9 @@ address {
 }
 .footer__contact {
     padding-top: 60px;
-
+    @media screen and(max-width:479px){
+        padding-bottom: 60px;
+    }
     @media screen and(min-width:$laptop){
     // height: 252px;
     flex-wrap: wrap;}
@@ -301,7 +303,7 @@ margin-bottom: 60px;}
         background-color: transparent;
         color: #fff;
         @media screen and(max-width:479px){
-        width: 300px;
+        width: 270px;
         }
         @media screen and(min-width:$mobile){
             width: 450px;

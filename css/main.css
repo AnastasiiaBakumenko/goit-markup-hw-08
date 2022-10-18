@@ -370,7 +370,7 @@ a,
 .logo {
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   color: #212121;
   line-height: 1.19;
 }
@@ -403,6 +403,9 @@ a,
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 5px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 .menu-toggle {
@@ -1590,6 +1593,11 @@ address {
 .footer__contact {
   padding-top: 60px;
 }
+@media screen and (max-width: 479px) {
+  .footer__contact {
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__contact {
     -ms-flex-wrap: wrap;
@@ -1955,7 +1963,7 @@ address {
 }
 @media screen and (max-width: 479px) {
   .subscribe__input {
-    width: 300px;
+    width: 270px;
   }
 }
 @media screen and (min-width: 480px) {
