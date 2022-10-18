@@ -16,7 +16,9 @@ address {
         display: block;
 }
 @media screen and(min-width:$laptop){
-    display: flex;        
+    display: flex;   
+    padding-left: 15px;
+    padding-right: 15px;     
 }
 }
 
