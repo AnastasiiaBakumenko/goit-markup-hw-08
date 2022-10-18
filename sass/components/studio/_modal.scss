@@ -60,7 +60,11 @@
 @media screen and(min-width:$mobile){
     .modal{
     width: 450px;
-    height: 609px;}
+    height: 609px;}}
+@media screen and(min-width:$laptop){
+   .modal{ width: 528px;
+    height: 581px;
+}
 }
 .form__title {
     font-weight: 700;

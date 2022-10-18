@@ -2,14 +2,21 @@
     .nav-mobile{
         display: flex;
         justify-content: space-between;
+        padding-top: 5px;
     }}
 .menu-toggle{
     border: none;
     background-color: transparent;
     width:40px;
     height:40px;
-    
-    
+    fill:currentColor;
+}
+.menu-toggle:hover,
+.menu-toggle:focus{
+    fill:$accent-color;
+}
+.current_burger{
+    color:$accent-color;
 }
 .menu-toggle__close{
     display: block;
@@ -40,6 +47,9 @@
 font-size: 40px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+@media screen and(max-width:479px){
+        font-size: 30px;
+}
 }
 .menu-burger__list:not(:last-child){
 margin-bottom: 32px;
@@ -54,6 +64,9 @@ margin-bottom: 32px;
     padding: 0;
     margin: 0;
     margin-top: 250px;
+    @media screen and(max-width:479px){
+        margin-top: 200px;
+    }
 }
 .menu-burger__contacts{
 font-weight: 500;
@@ -63,7 +76,12 @@ letter-spacing: 0.02em;
 
 color: #757575;
 margin-top: auto;
+@media screen and(max-width:479px){
+    font-size: 18px;
 }
+}
+
+
 .menu-burger__contacts:hover,
 .menu-burger__contacts:focus{
     color:$accent-color;
@@ -95,6 +113,9 @@ letter-spacing: 0.02em;
 color: $accent-color;
 padding-left: 10px;
 cursor: pointer;
+@media screen and(max-width:479px){
+    font-size: 12px;
+}
 }
 .menu-burger__social-link:first-child{
     padding-left: 0;
@@ -109,13 +130,20 @@ cursor: pointer;
     left:0;
     width:100vw;
     height: 100vh;
-    padding: 10px 10px 48px 40px;
+    // padding: 10px 10px 48px 40px;
     background-color: #fff;
     z-index: 99;
-    transform: translateX(100%);
+    transform: translateY(-120%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+@media screen and (max-width:479px){
+    .menu-container{
+    width:100vw;
+    height:100%;
+    padding-left: 20px;
+}}
 .menu-container.is-open{
     transform: translateX(0);
+    max-width: 100vh;
 }

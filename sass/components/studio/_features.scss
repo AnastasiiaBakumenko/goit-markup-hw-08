@@ -45,7 +45,7 @@
                 margin-bottom: 0;
             }
         }
-        @media screen and (min-width:$tablet)
+        @media screen and (min-width:$tablet) and (max-width:1199px)
             {
                 &__list{
                     flex-basis: calc((100% - 30px)/2);
@@ -80,7 +80,9 @@
             background-position: center;
             background-size: auto;
             margin-bottom: 30px;
-           
+            @media screen and(max-width:479px){
+                width: 290px;
+            }
             @media screen and (min-width:$mobile){
                 width: 450px;
             }
