@@ -350,7 +350,6 @@ a,
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    margin: 0;
   }
 }
 
@@ -434,6 +433,7 @@ a,
   width: 40px;
   height: 40px;
   margin-left: auto;
+  margin-right: 20px;
   fill: currentColor;
 }
 
@@ -590,7 +590,7 @@ a,
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  overflow: auto;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1928,11 +1928,6 @@ address {
     padding: 0 10px;
   }
 }
-@media screen and (min-width: 480px) {
-  .subscribe__email {
-    margin: 20px 15px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .subscribe__email {
     margin: 0;
@@ -2055,8 +2050,8 @@ address {
 }
 @media screen and (max-width: 479px) {
   .subscribe__button {
-    -webkit-transform: translate(-45px, 20px);
-            transform: translate(-45px, 20px);
+    -webkit-transform: translate(-35px, 20px);
+            transform: translate(-35px, 20px);
   }
 }
 @media screen and (min-width: 480px) {

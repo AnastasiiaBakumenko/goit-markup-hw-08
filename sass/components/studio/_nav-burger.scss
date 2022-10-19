@@ -26,6 +26,7 @@
     width:40px;
     height:40px;
     margin-left: auto;
+    margin-right: 20px;
     fill:currentColor;
 }
 .menu-toggle__close:hover,
@@ -149,7 +150,7 @@ cursor: pointer;
 
 .menu-container.is-open{
     transform: translateX(0);
-    overflow: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     // max-height: 100%;
