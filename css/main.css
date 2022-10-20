@@ -847,6 +847,11 @@ a,
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 768px) {
+  .modal {
+    height: 100vh;
+  }
+}
 .modal__button {
   position: fixed;
   cursor: pointer;
@@ -973,6 +978,11 @@ a,
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .checkbox__label {
+    display: block;
+  }
 }
 .checkbox__icon {
   width: 16px;
