@@ -19,21 +19,7 @@
 .current_burger{
     color:$accent-color;
 }
-.menu-toggle__close{
-    display: block;
-    border: none;
-    background-color: transparent;
-    width:40px;
-    height:40px;
-    margin-left: auto;
-    margin-right: 20px;
-    fill:currentColor;
-}
-.menu-toggle__close:hover,
-.menu-toggle__close:focus{
-    fill:$accent-color;
-    cursor: pointer;
-}
+
 @media screen and (min-width:768px){
     .menu-toggle{
         display: none;
@@ -141,8 +127,9 @@ cursor: pointer;
         display:none;
     }
 }
-@media screen and (max-width:479px){
+@media screen and (max-width:$tablet){
     .menu-container{
+    position: fixed;
     width:100vw;
     height:100%;
     padding-left: 20px;
@@ -154,4 +141,24 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     // max-height: 100%;
+}
+.button-toggle{
+    position: relative;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.menu-toggle__close{
+    position: absolute;
+    display: block;
+    border: none;
+    background-color: transparent;
+    width:40px;
+    height:40px;
+    
+    fill:currentColor;
+}
+.menu-toggle__close:hover,
+.menu-toggle__close:focus{
+    fill:$accent-color;
+    cursor: pointer;
 }

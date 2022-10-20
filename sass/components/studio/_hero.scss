@@ -25,11 +25,11 @@
             margin: 0 auto;
             margin-bottom: 30px;
             @media screen and(max-width:479px){
-                padding-top: 50px;
-                font-size:16px;
+                
+                font-size:20px;
                 line-height: 1.4;
-                width: 200px;
-                margin-bottom: 10px;
+                width: 300px;
+                margin-bottom: 30px;
             }
             @media screen and (min-width:$mobile){
                 font-size:26px;
@@ -103,14 +103,11 @@
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     @media screen and(max-width:479px){
-        padding: 5px 20px;
-        font-size: 10px;
+        padding: 10px 24px;
+    
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
-    }
-    @media screen and (min-width:$mobile){
-        padding: 10px 24px;
     }
     @media screen and (min-width:$laptop){
         padding: 10px 32px;
