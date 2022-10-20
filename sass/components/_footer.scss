@@ -80,6 +80,9 @@ margin-bottom: 60px;}
 }
 .contact-links__item:not(:last-child) {
     margin-right: 30px;
+    @media screen and(max-width:1199px){
+        margin-right: 0;
+    }
 }
 
 .contact-links__link {

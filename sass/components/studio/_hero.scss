@@ -6,11 +6,11 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    @media screen and(max-width:479px){
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background_hero.jpg");
-        max-width:479px;
-        text-align: center;
-    }
+    // @media screen and(max-width:479px){
+    //     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background_hero.jpg");
+    //     max-width:479px;
+    //     text-align: center;
+    // }
     @media screen and (min-width:$laptop){
         max-width: 1600px;
         padding: 200px 0;
@@ -43,7 +43,7 @@
         }
     }}
     
-   @media screen and(min-width:$mobile) and (max-width:767px){
+   @media screen and(max-width:767px){
     @media screen and(min-device-pixel-ratio: 1),
     screen and(min-resolution: 96dpi),screen and(min-resolution: 1dppx){
         .hero{
