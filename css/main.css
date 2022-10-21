@@ -1447,6 +1447,11 @@ a,
     font-size: 26px;
   }
 }
+@media screen and (max-width: 767px) {
+  .clients__title {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .clients__title {
     font-size: 28px;
