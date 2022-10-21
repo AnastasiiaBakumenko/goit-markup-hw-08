@@ -23,11 +23,8 @@
             text-align: center;
             padding-bottom: 50px;
             @media screen and   (max-width:479px){
-                padding-bottom: 0;
+                padding-bottom: 30px;
                 font-size: 26px;
-            }
-            @media screen and   (max-width:767px){
-                margin-bottom: 30px;
             }
             @media screen and(min-width:$mobile){
                 font-size: 28px;

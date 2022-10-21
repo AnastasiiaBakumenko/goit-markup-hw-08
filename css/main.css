@@ -1443,13 +1443,8 @@ a,
 }
 @media screen and (max-width: 479px) {
   .clients__title {
-    padding-bottom: 0;
+    padding-bottom: 30px;
     font-size: 26px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .clients__title {
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 480px) {
