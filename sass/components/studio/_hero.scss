@@ -48,7 +48,6 @@
     screen and(min-resolution: 96dpi),screen and(min-resolution: 1dppx){
         .hero{
             padding: 118px 0;
-            height: 400px;
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
         url("../images/hero-background/hero-background-480.jpg");}
         
@@ -107,7 +106,7 @@
     
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 30px;
+       
     }
     @media screen and (min-width:$laptop){
         padding: 10px 32px;

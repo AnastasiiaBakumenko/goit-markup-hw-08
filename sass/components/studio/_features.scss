@@ -1,12 +1,8 @@
 .features {
-    @media screen and(max-width:479px){
-        padding-top: 20px ;
-        padding-bottom: 20px;
-    }
     @media screen and(min-width:$tablet){
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 60px;
+        // padding-bottom: 60px;
     }
     @media screen and(min-width:$laptop){
         padding-bottom: 0px;
@@ -21,7 +17,7 @@
             font-weight: 700;
             line-height: 1.14;
             letter-spacing: 0.03em;
-            padding-bottom: 10px;
+            margin-bottom: 10px;
             @media screen and(max-width:479px){
                 display: flex;
                 justify-content: center;
